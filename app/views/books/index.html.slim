@@ -1,0 +1,10 @@
+/ = will_paginate @books
+table.table.table-bordered.table-hover
+  thead
+    tr
+      th №
+      th Наименование
+      th Инвентарный номер
+  tbody
+    = render @books, index: @index
+p = link_to 'Добавить книгу', new_book_path, class: 'btn btn-primary'
