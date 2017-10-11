@@ -1,0 +1,7 @@
+.well.book
+  p Наименование: #{@book.title}
+  p Автор: #{@book.author}
+  p Инвентарный номер: #{@book.number}
+= link_to 'Изменить', edit_book_path(@book), class: 'btn btn-primary'
+'
+= link_to 'Удалить', @book, method: :delete, class: 'btn btn-primary'

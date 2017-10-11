@@ -1,0 +1,13 @@
+= form_for book do |f|
+  = render 'common/errors', resource: book
+  .form-group
+    = f.label :title, 'Наименование'
+    = f.text_field :title, class: 'form-control'
+  .form-group
+    = f.label :author, 'Автор'
+    = f.text_field :author, class: 'form-control'
+  .form-group
+    = f.label :number,  'Инвентарный номер'
+    = f.text_field :number, class: 'form-control'
+  .form-group
+    = f.submit 'Сохранить', class: 'btn btn-primary'
